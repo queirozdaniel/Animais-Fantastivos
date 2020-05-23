@@ -1,3 +1,3 @@
-#Projeto criado para estudar Javascript
+## Projeto criado para estudar Javascript
 
 Os estudoa ainda estão em andamento...
