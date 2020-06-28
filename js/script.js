@@ -277,3 +277,6 @@ initDropdownMenu();
 initMenuMobile();
 initFetchAnimais();
 initFetchBitcoin();
+
+
+
