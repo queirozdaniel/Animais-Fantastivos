@@ -54,3 +54,15 @@ button.hidden().show().on('click', (event) => {
     button.addClass('ativo')
 })
 
+/*
+
+Regex para
+CEP: /\d{5}[-\s]?\d{3}/g
+CPF: /(?:\d{3}[.-]?){3}\d{2}/g
+CPNJ: /\d{2}[.-]?(?:\d{3}[.-]?){2}[/]?\d{4}[.-]?\d{2}/g
+Telefones: /(?:\+?55\s?)?(?:\(?\d{2}\)?[\s-]?)?\d{4,5}[-\s]?\d{4}/g
+email: /[\w.-]+@[\w-]+\.[\w.-]+/gi
+
+
+
+ */
