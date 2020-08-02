@@ -20,8 +20,6 @@ const regexNum = /\d/g
 const resultadosNum = fraseNum.replace(regexNum, '')
 
 console.log(resultadosNum);
-*/
-
 
 const cpfs = document.querySelectorAll('.cpf li')
 
@@ -59,4 +57,10 @@ console.log(construirCPF("12312312335"));
 
 
 subistituiCPFS(cpfs)
+*/
+
+import ValidarCpf from './validar-cpf.js'
+
+const campoCPF = document.getElementById('cpf')
+const validador = new ValidarCpf(campoCPF).iniciar();
 
