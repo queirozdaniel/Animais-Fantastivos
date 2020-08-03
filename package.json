@@ -1,0 +1,31 @@
+{
+  "name": "animais-fantastivos",
+  "version": "1.0.0",
+  "description": "Site para estudos JS",
+  "main": "index.html",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/queirozdaniel/Animais-Fantastivos.git"
+  },
+  "keywords": [
+    "vanilla",
+    "js"
+  ],
+  "author": "Daniel Queiroz",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/queirozdaniel/Animais-Fantastivos/issues"
+  },
+  "homepage": "https://github.com/queirozdaniel/Animais-Fantastivos#readme",
+  "devDependencies": {
+    "eslint": "^7.6.0",
+    "eslint-config-airbnb-base": "^14.2.0",
+    "eslint-plugin-import": "^2.22.0"
+  },
+  "dependencies": {
+    "eslint-config-prettier": "^6.11.0"
+  }
+}
