@@ -203,15 +203,15 @@ window.addEventListener('keydown', handleClickT)
 */
 
 /**
-*  innerHTML - todos elementos e tag selecionada
-*  outerHTML - pega elementos de fora
-*  innerText - apenas texto
-* 
-* Transversing - navegar por elementos
-* Element - é uma tag html
-* Node - pode ser qualquer tipo de elemento ou dado
-* 
-*/
+ *  innerHTML - todos elementos e tag selecionada
+ *  outerHTML - pega elementos de fora
+ *  innerText - apenas texto
+ *
+ * Transversing - navegar por elementos
+ * Element - é uma tag html
+ * Node - pode ser qualquer tipo de elemento ou dado
+ *
+ */
 
 /*
 const lista = document.querySelector('.animais-lista')
@@ -245,29 +245,28 @@ faq.appendChild(cloneh1)
 */
 
 /**
-* Navegação por TABs 
-* 
-*/
-
-
+ * Navegação por TABs
+ *
+ */
 
 /**
-* Accordion List
-*/
+ * Accordion List
+ */
 
+import initAnimacaoScroll from "./modules/scroll-animacao.js";
+import ScrollSuave from "./modules/scroll-suave.js";
+import initTabNav from "./modules/tab-nav.js";
+import initFaqDetails from "./modules/accordion-anime.js";
+import initModal from "./modules/modal.js";
+import initTooltip from "./modules/tooltip.js";
+import initDropdownMenu from "./modules/dropdown-menu.js";
+import initMenuMobile from "./modules/menu-mobile.js";
+import initFetchAnimais from "./modules/fetchAnimais.js";
+import initFetchBitcoin from "./modules/fetchBitcoin.js";
 
-import initAnimacaoScroll from './modules/scroll-animacao.js';
-import initScrollSuave from './modules/scroll-suave.js';
-import initTabNav from './modules/tab-nav.js';
-import initFaqDetails from './modules/accordion-anime.js';
-import initModal from './modules/modal.js';
-import initTooltip from './modules/tooltip.js';
-import initDropdownMenu from './modules/dropdown-menu.js';
-import initMenuMobile from './modules/menu-mobile.js';
-import initFetchAnimais from './modules/fetchAnimais.js'
-import initFetchBitcoin from './modules/fetchBitcoin.js'
+const scrollSuave = new ScrollSuave('[data-menu="suave"] a[href^="#"]');
+scrollSuave.init();
 
-initScrollSuave();
 initAnimacaoScroll();
 initTabNav();
 initFaqDetails();
@@ -277,6 +276,3 @@ initDropdownMenu();
 initMenuMobile();
 initFetchAnimais();
 initFetchBitcoin();
-
-
-
