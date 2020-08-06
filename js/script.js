@@ -253,12 +253,14 @@ faq.appendChild(cloneh1)
  * Accordion List
  */
 
-import initAnimacaoScroll from "./modules/scroll-animacao.js";
 import ScrollSuave from "./modules/scroll-suave.js";
 import TabNav from "./modules/tab-nav.js";
 import Accordion from "./modules/accordion-anime.js";
-import initModal from "./modules/modal.js";
-import initTooltip from "./modules/tooltip.js";
+import Modal from "./modules/modal.js";
+import Tooltip from "./modules/tooltip.js";
+
+import initAnimacaoScroll from "./modules/scroll-animacao.js";
+
 import initDropdownMenu from "./modules/dropdown-menu.js";
 import initMenuMobile from "./modules/menu-mobile.js";
 import initFetchAnimais from "./modules/fetchAnimais.js";
@@ -269,10 +271,16 @@ scrollSuave.init();
 
 new Accordion('[data-anime="accordion"] dt').init();
 new TabNav('[data-tab="menu"] li', '[data-tab="content"] section').init();
+new Modal(
+  '[data-modal="abrir"]',
+  '[data-modal="fechar"]',
+  '[data-modal="container"]'
+).init();
+
+new Tooltip("[data-tooltip]").init();
 
 initAnimacaoScroll();
-initModal();
-initTooltip();
+
 initDropdownMenu();
 initMenuMobile();
 initFetchAnimais();
