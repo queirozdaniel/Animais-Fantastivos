@@ -260,8 +260,8 @@ import Modal from "./modules/modal.js";
 import Tooltip from "./modules/tooltip.js";
 import fetchAnimais from "./modules/fetchAnimais.js";
 import fetchBitcoin from "./modules/fetchBitcoin.js";
+import ScrollAnima from "./modules/scroll-animacao.js";
 
-import initAnimacaoScroll from "./modules/scroll-animacao.js";
 import initDropdownMenu from "./modules/dropdown-menu.js";
 import initMenuMobile from "./modules/menu-mobile.js";
 
@@ -278,6 +278,6 @@ new Tooltip("[data-tooltip]").init();
 fetchAnimais("./animaisapi.json", ".numeros-grid");
 fetchBitcoin("https://blockchain.info/ticker", ".btc-preco");
 
-initAnimacaoScroll();
+new ScrollAnima('[data-anime="scroll"]').init();
 initDropdownMenu();
 initMenuMobile();
