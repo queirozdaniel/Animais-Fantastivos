@@ -258,17 +258,15 @@ import TabNav from "./modules/tab-nav.js";
 import Accordion from "./modules/accordion-anime.js";
 import Modal from "./modules/modal.js";
 import Tooltip from "./modules/tooltip.js";
+import fetchAnimais from "./modules/fetchAnimais.js";
+import fetchBitcoin from "./modules/fetchBitcoin.js";
 
 import initAnimacaoScroll from "./modules/scroll-animacao.js";
-
 import initDropdownMenu from "./modules/dropdown-menu.js";
 import initMenuMobile from "./modules/menu-mobile.js";
-import initFetchAnimais from "./modules/fetchAnimais.js";
-import initFetchBitcoin from "./modules/fetchBitcoin.js";
 
 const scrollSuave = new ScrollSuave('[data-menu="suave"] a[href^="#"]');
 scrollSuave.init();
-
 new Accordion('[data-anime="accordion"] dt').init();
 new TabNav('[data-tab="menu"] li', '[data-tab="content"] section').init();
 new Modal(
@@ -276,12 +274,10 @@ new Modal(
   '[data-modal="fechar"]',
   '[data-modal="container"]'
 ).init();
-
 new Tooltip("[data-tooltip]").init();
+fetchAnimais("./animaisapi.json", ".numeros-grid");
+fetchBitcoin("https://blockchain.info/ticker", ".btc-preco");
 
 initAnimacaoScroll();
-
 initDropdownMenu();
 initMenuMobile();
-initFetchAnimais();
-initFetchBitcoin();
