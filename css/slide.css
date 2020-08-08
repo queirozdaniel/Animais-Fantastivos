@@ -1,0 +1,50 @@
+.galeria {
+  overflow: hidden;
+  margin: 0 auto;
+  grid-column: 1 / -1;
+}
+
+.wrapper {
+  margin: 10px auto;
+  grid-column: 1 / -1;
+}
+
+.slide {
+  display: flex;
+}
+.slide:hover {
+  will-change: transform;
+}
+.slide li {
+  width: 80vw;
+  flex-shrink: 0;
+  max-width: 400px;
+  border-radius: 4px;
+  overflow: hidden;
+  box-shadow: 0 3px 5px rgba(0, 0, 0, 0.4);
+  opacity: 0.8;
+  transform: scale(0.9);
+  transition: 0.3s;
+}
+
+.slide li.ativo {
+  opacity: 1;
+  transform: scale(1);
+}
+
+[data-control="slide"] {
+  display: flex;
+  justify-content: center;
+  grid-column: 1 / -1;
+}
+
+[data-control="slide"] li {
+  cursor: pointer;
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+  overflow: hidden;
+  text-indent: -999px;
+  margin: 8px;
+  grid-column: 1 / -1;
+}
